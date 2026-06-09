@@ -271,9 +271,9 @@ if "Inicio" in p:
             <div style='font-size:0.85rem;color:#9ca3af;font-style:italic;margin-top:2px;'>Conectamos talento, creamos oportunidades.</div>
         </div>
         <div style='display:flex;gap:8px;flex-wrap:wrap;'>
-            <span style='background:#f5f0ff;color:#5b21b6;border-radius:99px;padding:5px 14px;font-size:0.78rem;font-weight:600;'>20+ Vacantes</span>
+            <span style='background:#f5f0ff;color:#5b21b6;border-radius:99px;padding:5px 14px;font-size:0.78rem;font-weight:600;'>100+ Vacantes</span>
             <span style='background:#fce7f3;color:#9d174d;border-radius:99px;padding:5px 14px;font-size:0.78rem;font-weight:600;'>20 Áreas STEM</span>
-            <span style='background:#f0fdf4;color:#166534;border-radius:99px;padding:5px 14px;font-size:0.78rem;font-weight:600;'>Summit Nov 2025</span>
+            <span style='background:#f0fdf4;color:#166534;border-radius:99px;padding:5px 14px;font-size:0.78rem;font-weight:600;'>Summit Nov 2026</span>
         </div>
     </div>
     """, unsafe_allow_html=True)
