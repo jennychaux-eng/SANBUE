@@ -262,95 +262,77 @@ p = st.session_state.page
 # ── HOME ────────────────────────────────────────────────────────────────────
 if "Inicio" in p:
 
+    # ── TOP BAR: Nombre + eslogan ──
+    st.markdown("""
+    <div style='display:flex;align-items:center;justify-content:space-between;padding:1.2rem 0 0.5rem;border-bottom:1px solid #f0e6ff;margin-bottom:2rem;flex-wrap:wrap;gap:1rem;'>
+        <div>
+            <span style='font-size:1.6rem;font-weight:800;color:#3b0764;letter-spacing:-0.02em;'>STAYHER</span>
+            <span style='font-size:1.6rem;font-weight:300;color:#7c3aed;letter-spacing:-0.02em;'> Connect</span>
+            <div style='font-size:0.85rem;color:#9ca3af;font-style:italic;margin-top:2px;'>Conectamos talento, creamos oportunidades.</div>
+        </div>
+        <div style='display:flex;gap:8px;flex-wrap:wrap;'>
+            <span style='background:#f5f0ff;color:#5b21b6;border-radius:99px;padding:5px 14px;font-size:0.78rem;font-weight:600;'>20+ Vacantes</span>
+            <span style='background:#fce7f3;color:#9d174d;border-radius:99px;padding:5px 14px;font-size:0.78rem;font-weight:600;'>20 Áreas STEM</span>
+            <span style='background:#f0fdf4;color:#166534;border-radius:99px;padding:5px 14px;font-size:0.78rem;font-weight:600;'>Summit Nov 2025</span>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
     # ── HERO ──
     st.markdown("""
-    <div style='background:linear-gradient(135deg,#1e0a3c 0%,#3b1278 50%,#6d28d9 100%);border-radius:24px;padding:3.5rem 3rem 3rem;margin-bottom:2rem;color:white;'>
-        <div style='display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:2rem;'>
-            <div style='flex:1;min-width:260px;'>
-                <div style='display:inline-block;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);border-radius:99px;padding:5px 16px;font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1.2rem;'>
-                    Plataforma de empleo inteligente · STEM
-                </div>
-                <h1 style='font-size:2.6rem;font-weight:800;line-height:1.15;margin:0 0 1rem;'>
-                    Tu potencial importa<br>más que tus horas
-                </h1>
-                <p style='font-size:1rem;line-height:1.7;opacity:0.85;max-width:480px;margin:0 0 1.8rem;'>
-                    STAYHER Connect es la primera plataforma que evalúa a mujeres STEM por productividad real, compatibilidad cultural y potencial de crecimiento — no por horas disponibles ni títulos.
-                </p>
-                <div style='display:flex;gap:12px;flex-wrap:wrap;'>
-                    <div style='background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:12px;padding:0.8rem 1.2rem;text-align:center;min-width:90px;'>
-                        <div style='font-size:1.6rem;font-weight:800;'>20+</div>
-                        <div style='font-size:0.72rem;opacity:0.75;text-transform:uppercase;letter-spacing:0.05em;'>Vacantes activas</div>
-                    </div>
-                    <div style='background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:12px;padding:0.8rem 1.2rem;text-align:center;min-width:90px;'>
-                        <div style='font-size:1.6rem;font-weight:800;'>20</div>
-                        <div style='font-size:0.72rem;opacity:0.75;text-transform:uppercase;letter-spacing:0.05em;'>Áreas STEM</div>
-                    </div>
-                    <div style='background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:12px;padding:0.8rem 1.2rem;text-align:center;min-width:90px;'>
-                        <div style='font-size:1.6rem;font-weight:800;'>IPP</div>
-                        <div style='font-size:0.72rem;opacity:0.75;text-transform:uppercase;letter-spacing:0.05em;'>Índice propio</div>
-                    </div>
-                    <div style='background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:12px;padding:0.8rem 1.2rem;text-align:center;min-width:90px;'>
-                        <div style='font-size:1.6rem;font-weight:800;'>360°</div>
-                        <div style='font-size:0.72rem;opacity:0.75;text-transform:uppercase;letter-spacing:0.05em;'>Perfil de vida</div>
-                    </div>
-                </div>
+    <div style='background:linear-gradient(135deg,#1e0a3c 0%,#3b1278 55%,#7c3aed 100%);border-radius:24px;padding:3.5rem 3rem 3.5rem;margin-bottom:2.5rem;color:white;position:relative;overflow:hidden;'>
+        <div style='position:absolute;top:-40px;right:-40px;width:280px;height:280px;background:rgba(236,72,153,0.12);border-radius:50%;'></div>
+        <div style='position:absolute;bottom:-60px;right:120px;width:180px;height:180px;background:rgba(167,139,250,0.1);border-radius:50%;'></div>
+        <div style='position:relative;max-width:580px;'>
+            <div style='display:inline-block;background:rgba(236,72,153,0.25);border:1px solid rgba(236,72,153,0.4);border-radius:99px;padding:5px 16px;font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.4rem;color:#f9a8d4;'>
+                Inteligencia Artificial · Empleo · Comunidad
             </div>
-            <div style='flex:0 0 auto;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);border-radius:18px;padding:1.5rem;min-width:220px;max-width:260px;'>
-                <div style='font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;opacity:0.65;margin-bottom:1rem;'>Próximo evento</div>
-                <div style='font-size:1rem;font-weight:700;margin-bottom:0.3rem;'>STAYHER Connect Summit 2025</div>
-                <div style='font-size:0.82rem;opacity:0.75;margin-bottom:1rem;'>📍 Bogotá, Colombia<br>📅 Noviembre 15–16, 2025</div>
-                <div style='background:rgba(236,72,153,0.3);border:1px solid rgba(236,72,153,0.4);border-radius:8px;padding:6px 12px;font-size:0.78rem;font-weight:600;text-align:center;'>
-                    +30 empresas · +20 conferencias
+            <h1 style='font-size:2.8rem;font-weight:800;line-height:1.13;margin:0 0 1.2rem;letter-spacing:-0.02em;'>
+                El talento no se mide<br>en horas. Se mide<br>en <span style='color:#f9a8d4;'>resultados.</span>
+            </h1>
+            <p style='font-size:1rem;line-height:1.75;opacity:0.82;margin:0 0 2rem;max-width:500px;'>
+                La plataforma que conecta a mujeres STEM con empresas que valoran quién eres, no solo cuánto tiempo tienes. Perfil inteligente, matching real, comunidad que impulsa.
+            </p>
+            <div style='display:flex;gap:2rem;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,0.12);padding-top:1.5rem;'>
+                <div>
+                    <div style='font-size:2rem;font-weight:800;line-height:1;'>1,200+</div>
+                    <div style='font-size:0.72rem;opacity:0.6;text-transform:uppercase;letter-spacing:0.08em;margin-top:3px;'>Profesionales</div>
+                </div>
+                <div style='border-left:1px solid rgba(255,255,255,0.15);padding-left:2rem;'>
+                    <div style='font-size:2rem;font-weight:800;line-height:1;'>85+</div>
+                    <div style='font-size:0.72rem;opacity:0.6;text-transform:uppercase;letter-spacing:0.08em;margin-top:3px;'>Empresas aliadas</div>
+                </div>
+                <div style='border-left:1px solid rgba(255,255,255,0.15);padding-left:2rem;'>
+                    <div style='font-size:2rem;font-weight:800;line-height:1;'>94%</div>
+                    <div style='font-size:0.72rem;opacity:0.6;text-transform:uppercase;letter-spacing:0.08em;margin-top:3px;'>Tasa de satisfacción</div>
+                </div>
+                <div style='border-left:1px solid rgba(255,255,255,0.15);padding-left:2rem;'>
+                    <div style='font-size:2rem;font-weight:800;line-height:1;'>20</div>
+                    <div style='font-size:0.72rem;opacity:0.6;text-transform:uppercase;letter-spacing:0.08em;margin-top:3px;'>Áreas STEM</div>
                 </div>
             </div>
         </div>
     </div>
     """, unsafe_allow_html=True)
 
-    if st.button("  Comenzar entrevista con IA  →", type="primary"):
+    if st.button("  Crear mi perfil con IA  →", type="primary"):
         st.session_state.page = "🤖 Entrevista IA"
         st.rerun()
 
     st.markdown("<br>", unsafe_allow_html=True)
 
-    # ── PROBLEMA / SOLUCIÓN ──
-    st.markdown("""
-    <div style='display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem;'>
-        <div style='background:#fff5f9;border:1px solid #fce7f3;border-radius:16px;padding:1.5rem;'>
-            <div style='font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:#9d174d;font-weight:600;margin-bottom:0.8rem;'>El problema actual</div>
-            <div style='font-size:0.92rem;color:#374151;line-height:1.8;'>
-                ❌ Las empresas evalúan por <strong>horas disponibles</strong><br>
-                ❌ Se ignoran responsabilidades de cuidado<br>
-                ❌ El CV no refleja potencial real<br>
-                ❌ Horarios no convencionales = descalificación<br>
-                ❌ Mujeres STEM sistemáticamente subvaloradas
-            </div>
-        </div>
-        <div style='background:#f5f0ff;border:1px solid #e9d5ff;border-radius:16px;padding:1.5rem;'>
-            <div style='font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:#5b21b6;font-weight:600;margin-bottom:0.8rem;'>Nuestra respuesta</div>
-            <div style='font-size:0.92rem;color:#374151;line-height:1.8;'>
-                ✅ Evaluación por <strong>productividad potencial</strong><br>
-                ✅ Contexto de vida considerado sin penalizar<br>
-                ✅ Perfil 360° generado por IA conversacional<br>
-                ✅ Matching por cultura y compatibilidad real<br>
-                ✅ Red activa de mujeres STEM en Latinoamérica
-            </div>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-
     # ── MÓDULOS ──
-    st.markdown("<div style='font-size:1.1rem;font-weight:700;color:#1a1a2e;margin-bottom:1rem;'>Los 4 módulos de la plataforma</div>", unsafe_allow_html=True)
+    st.markdown("<div style='font-size:1rem;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem;'>Todo lo que necesitas, en un solo lugar</div>", unsafe_allow_html=True)
 
     modulos = [
         ("🤖", "Matching Inteligente", "#f5f0ff", "#5b21b6", "#e9d5ff",
-         "Entrevista conversacional con IA que construye tu perfil 360° y calcula tu Índice de Productividad Potencial (IPP) para emparejarte con vacantes que se adaptan a tu vida."),
+         "Entrevista con IA que construye tu perfil 360° y calcula tu Índice de Productividad Potencial para conectarte con las vacantes que realmente encajan con tu vida."),
         ("👥", "Comunidad STEM", "#fff5f9", "#9d174d", "#fce7f3",
-         "Red profesional con 20 espacios temáticos por área. Publica logros, haz preguntas, comparte convocatorias y construye tu red de contactos."),
+         "20 espacios temáticos por área. Comparte logros, conecta con colegas, encuentra convocatorias y crece junto a una red de mujeres que entiende tu camino."),
         ("📅", "Eventos Connect", "#eff6ff", "#1e40af", "#dbeafe",
-         "Encuentros semestrales con empresas aliadas, universidades y centros de investigación. Zona de reclutamiento, conferencias y networking estructurado."),
-        ("📖", "Mentorías", "#f0fdf4", "#166534", "#dcfce7",
-         "Biblioteca de historias reales de mujeres STEM que superaron barreras. Postúlate como mentora o encuentra a alguien que ya recorrió tu camino."),
+         "Summit semestral con +30 empresas aliadas, conferencias de líderes STEM y networking estructurado entre profesionales y reclutadores."),
+        ("📖", "Mentorías & Historias", "#f0fdf4", "#166534", "#dcfce7",
+         "Aprende de quienes ya recorrieron tu camino. Historias reales de mujeres STEM que crecieron profesionalmente sin renunciar a su vida personal."),
     ]
 
     c1, c2 = st.columns(2)
@@ -358,40 +340,121 @@ if "Inicio" in p:
     for col, (icon, title, bg, tc, border, desc) in zip(cols, modulos):
         with col:
             st.markdown(f"""
-            <div style='background:{bg};border:1px solid {border};border-radius:16px;padding:1.3rem 1.4rem;margin-bottom:1rem;'>
-                <div style='display:flex;align-items:center;gap:10px;margin-bottom:0.6rem;'>
-                    <span style='font-size:1.5rem;'>{icon}</span>
+            <div style='background:{bg};border:1px solid {border};border-radius:16px;padding:1.4rem 1.5rem;margin-bottom:1rem;'>
+                <div style='display:flex;align-items:center;gap:10px;margin-bottom:0.7rem;'>
+                    <span style='font-size:1.4rem;'>{icon}</span>
                     <span style='font-weight:700;font-size:0.95rem;color:{tc};'>{title}</span>
                 </div>
-                <div style='font-size:0.87rem;color:#4b5563;line-height:1.65;'>{desc}</div>
+                <div style='font-size:0.87rem;color:#4b5563;line-height:1.7;'>{desc}</div>
             </div>
             """, unsafe_allow_html=True)
 
-    # ── IPP EXPLICADO ──
     st.markdown("<br>", unsafe_allow_html=True)
+
+    # ── EMPRESAS ALIADAS ──
     st.markdown("""
-    <div style='background:linear-gradient(135deg,#1e0a3c,#4c1d95);border-radius:20px;padding:2rem 2.5rem;color:white;'>
-        <div style='font-size:0.75rem;text-transform:uppercase;letter-spacing:0.12em;opacity:0.65;margin-bottom:0.5rem;'>Innovación central</div>
-        <div style='font-size:1.3rem;font-weight:700;margin-bottom:0.8rem;'>Índice de Productividad Potencial (IPP)</div>
-        <div style='font-size:0.9rem;opacity:0.85;margin-bottom:1.5rem;max-width:600px;'>
-            No medimos cuántas horas tienes. Medimos lo que puedes lograr con las horas que tienes.
+    <div style='text-align:center;margin-bottom:1.2rem;'>
+        <div style='font-size:0.8rem;font-weight:600;color:#9ca3af;text-transform:uppercase;letter-spacing:0.12em;'>Empresas que confían en nuestro talento</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    empresas = [
+        ("BC", "#1e3a5f", "Bancolombia Tech"),
+        ("GC", "#1a73e8", "Google Colombia"),
+        ("MS", "#00a4ef", "Microsoft LATAM"),
+        ("RP", "#ff441a", "Rappi Engineering"),
+        ("EP", "#00875a", "EPM Digital"),
+        ("BS", "#7c3aed", "BioSystems"),
+        ("TC", "#ec4899", "TechCorp Latam"),
+        ("NV", "#0f766e", "NeuralMind"),
+        ("SX", "#b45309", "SpaceX Partners"),
+        ("ID", "#4338ca", "InnovaData"),
+    ]
+
+    cols_e = st.columns(len(empresas))
+    for col, (initials, color, name) in zip(cols_e, empresas):
+        with col:
+            st.markdown(f"""
+            <div style='text-align:center;padding:0.5rem 0;'>
+                <div style='width:42px;height:42px;border-radius:10px;background:{color};display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;margin:0 auto 5px;letter-spacing:0.02em;'>{initials}</div>
+                <div style='font-size:0.62rem;color:#9ca3af;line-height:1.3;text-align:center;'>{name}</div>
+            </div>
+            """, unsafe_allow_html=True)
+
+    st.markdown("<div style='border-top:1px solid #f0e6ff;margin:2rem 0;'></div>", unsafe_allow_html=True)
+
+    # ── TESTIMONIOS ──
+    st.markdown("""
+    <div style='text-align:center;margin-bottom:1.5rem;'>
+        <div style='font-size:1.25rem;font-weight:700;color:#1a1a2e;'>Lo que dicen quienes ya lo vivieron</div>
+        <div style='font-size:0.88rem;color:#9ca3af;margin-top:4px;'>Historias reales de mujeres STEM que transformaron su carrera</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    t1, t2, t3 = st.columns(3)
+    testimonios = [
+        (
+            "Laura P.", "CTO · Bogotá",
+            "LC", "#7c3aed",
+            "Después de 3 años sin respuesta de empresas convencionales, STAYHER Connect me conectó con un equipo que valoró mi portafolio y mi disponibilidad real. Hoy lidero un equipo de 12 personas.",
+            "Ingeniería de Software"
+        ),
+        (
+            "María F.", "Data Scientist · Medellín",
+            "MF", "#ec4899",
+            "Soy madre de dos y trabajaba 4 horas al día. Ningún ATS me pasaba. Aquí mi IPP fue 88/100 y en dos semanas tenía tres entrevistas. Encontré un rol 100% remoto que se adapta a mi vida.",
+            "Ciencia de Datos & IA"
+        ),
+        (
+            "Valentina R.", "Investigadora · Cali",
+            "VR", "#0f766e",
+            "Migré desde provincia y no tenía red de contactos. La comunidad de STAYHER me ayudó a encontrar una beca, una mentora y mi primer contrato internacional. Todo en menos de 6 meses.",
+            "Investigación Científica"
+        ),
+    ]
+    for col, (nombre, cargo, ini, color, texto, area) in zip([t1, t2, t3], testimonios):
+        with col:
+            st.markdown(f"""
+            <div style='background:white;border:1px solid #f0e6ff;border-radius:18px;padding:1.5rem;height:100%;'>
+                <div style='font-size:1.3rem;color:#7c3aed;margin-bottom:0.8rem;line-height:1;'>"</div>
+                <div style='font-size:0.88rem;color:#374151;line-height:1.7;margin-bottom:1.2rem;'>{texto}</div>
+                <div style='border-top:1px solid #f5f0ff;padding-top:1rem;display:flex;align-items:center;gap:10px;'>
+                    <div style='width:38px;height:38px;border-radius:50%;background:{color};display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.78rem;flex-shrink:0;'>{ini}</div>
+                    <div>
+                        <div style='font-weight:600;font-size:0.88rem;color:#1a1a2e;'>{nombre}</div>
+                        <div style='font-size:0.75rem;color:#9ca3af;'>{cargo}</div>
+                        <div style='font-size:0.7rem;color:{color};font-weight:600;margin-top:1px;'>{area}</div>
+                    </div>
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # ── IPP BANNER ──
+    st.markdown("""
+    <div style='background:linear-gradient(135deg,#1e0a3c,#4c1d95);border-radius:20px;padding:2rem 2.5rem;color:white;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:2rem;'>
+        <div style='flex:1;min-width:240px;'>
+            <div style='font-size:0.72rem;text-transform:uppercase;letter-spacing:0.12em;opacity:0.55;margin-bottom:0.4rem;'>Nuestra innovación</div>
+            <div style='font-size:1.2rem;font-weight:700;margin-bottom:0.5rem;'>Índice de Productividad Potencial (IPP)</div>
+            <div style='font-size:0.88rem;opacity:0.8;max-width:400px;line-height:1.6;'>No medimos cuántas horas tienes. Medimos lo que puedes lograr con las horas que tienes.</div>
         </div>
-        <div style='display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;'>
-            <div style='background:rgba(255,255,255,0.08);border-radius:12px;padding:1rem;text-align:center;'>
-                <div style='font-size:1.4rem;font-weight:800;color:#c4b5fd;'>40%</div>
-                <div style='font-size:0.78rem;opacity:0.75;margin-top:4px;'>Competencias técnicas</div>
+        <div style='display:flex;gap:1rem;flex-wrap:wrap;'>
+            <div style='background:rgba(255,255,255,0.08);border-radius:12px;padding:0.9rem 1.1rem;text-align:center;min-width:80px;'>
+                <div style='font-size:1.3rem;font-weight:800;color:#c4b5fd;'>40%</div>
+                <div style='font-size:0.7rem;opacity:0.65;margin-top:3px;'>Competencias</div>
             </div>
-            <div style='background:rgba(255,255,255,0.08);border-radius:12px;padding:1rem;text-align:center;'>
-                <div style='font-size:1.4rem;font-weight:800;color:#f9a8d4;'>30%</div>
-                <div style='font-size:0.78rem;opacity:0.75;margin-top:4px;'>Historial de cumplimiento</div>
+            <div style='background:rgba(255,255,255,0.08);border-radius:12px;padding:0.9rem 1.1rem;text-align:center;min-width:80px;'>
+                <div style='font-size:1.3rem;font-weight:800;color:#f9a8d4;'>30%</div>
+                <div style='font-size:0.7rem;opacity:0.65;margin-top:3px;'>Cumplimiento</div>
             </div>
-            <div style='background:rgba(255,255,255,0.08);border-radius:12px;padding:1rem;text-align:center;'>
-                <div style='font-size:1.4rem;font-weight:800;color:#6ee7b7;'>20%</div>
-                <div style='font-size:0.78rem;opacity:0.75;margin-top:4px;'>Disponibilidad efectiva</div>
+            <div style='background:rgba(255,255,255,0.08);border-radius:12px;padding:0.9rem 1.1rem;text-align:center;min-width:80px;'>
+                <div style='font-size:1.3rem;font-weight:800;color:#6ee7b7;'>20%</div>
+                <div style='font-size:0.7rem;opacity:0.65;margin-top:3px;'>Disponibilidad</div>
             </div>
-            <div style='background:rgba(255,255,255,0.08);border-radius:12px;padding:1rem;text-align:center;'>
-                <div style='font-size:1.4rem;font-weight:800;color:#fcd34d;'>10%</div>
-                <div style='font-size:0.78rem;opacity:0.75;margin-top:4px;'>Adaptabilidad</div>
+            <div style='background:rgba(255,255,255,0.08);border-radius:12px;padding:0.9rem 1.1rem;text-align:center;min-width:80px;'>
+                <div style='font-size:1.3rem;font-weight:800;color:#fcd34d;'>10%</div>
+                <div style='font-size:0.7rem;opacity:0.65;margin-top:3px;'>Adaptabilidad</div>
             </div>
         </div>
     </div>
